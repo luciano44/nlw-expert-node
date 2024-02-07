@@ -1,10 +1,23 @@
-GET http://localhost:3000 
-
-###
+### CREATE POLL
 
 POST http://localhost:3000/polls
 Content-Type: application/json
 
 {
-    "title": "Hello World 2?"
+    "title": "Whats the best movie",
+    "options": ["Titanic","Harry Potter","Madagascar"]
+}
+
+### GET POLL BY ID
+
+GET http://localhost:3000/polls/f0e0bba5-f58b-495d-98c1-661a70364c4a
+
+### VOTE ON POLL (/polls/:pollId/votes)
+# body: pollOptionId
+
+POST http://localhost:3000/polls/f0e0bba5-f58b-495d-98c1-661a70364c4a/votes
+Content-Type: application/json
+
+{
+    "pollOptionId": "2dc148e0-0a7c-4dda-8c59-e3542107dd17"
 }
