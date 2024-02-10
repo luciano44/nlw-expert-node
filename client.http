@@ -4,20 +4,20 @@ POST http://localhost:3000/polls
 Content-Type: application/json
 
 {
-    "title": "Whats the best movie",
-    "options": ["Titanic","Harry Potter","Madagascar"]
+    "title": "Best CPU Brand?",
+    "options": ["Intel","AMD"]
 }
 
 ### GET POLL BY ID
-
-GET http://localhost:3000/polls/f0e0bba5-f58b-495d-98c1-661a70364c4a
+ 
+GET http://localhost:3000/polls/02a5856a-9c3c-4f02-8bc6-148616d89fe0
 
 ### VOTE ON POLL (/polls/:pollId/votes)
 # body: pollOptionId
 
-POST http://localhost:3000/polls/f0e0bba5-f58b-495d-98c1-661a70364c4a/votes
+POST http://localhost:3000/polls/02a5856a-9c3c-4f02-8bc6-148616d89fe0/votes
 Content-Type: application/json
 
 {
-    "pollOptionId": "2dc148e0-0a7c-4dda-8c59-e3542107dd17"
+    "pollOptionId": "4d6b5105-8aec-4859-a671-1a7adadcbc73"
 }
