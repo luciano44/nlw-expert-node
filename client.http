@@ -10,14 +10,14 @@ Content-Type: application/json
 
 ### GET POLL BY ID
  
-GET http://localhost:3000/polls/02a5856a-9c3c-4f02-8bc6-148616d89fe0
+GET http://localhost:3000/polls/668c9579-ed93-412f-8f71-036611d23d2c
 
 ### VOTE ON POLL (/polls/:pollId/votes)
 # body: pollOptionId
 
-POST http://localhost:3000/polls/02a5856a-9c3c-4f02-8bc6-148616d89fe0/votes
+POST http://localhost:3000/polls/668c9579-ed93-412f-8f71-036611d23d2c/votes
 Content-Type: application/json
 
 {
-    "pollOptionId": "4d6b5105-8aec-4859-a671-1a7adadcbc73"
+    "pollOptionId": "20d9afd9-e45a-4e5c-9c3b-13ac882f82a7"
 }
